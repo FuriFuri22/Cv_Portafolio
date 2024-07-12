@@ -1,0 +1,102 @@
+/* src/App.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: black; /* Asegura el fondo negro para el espacio exterior */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff; /* Color blanco */
+  text-shadow: 0 0 5px #fff,  /* Sombra blanca suave */
+               0 0 10px #000000, /* Sombra blanca más intensa */
+               0 0 15px #fff; /* Sombra blanca aún más intensa */
+  position: relative; /* Necesario para el pseudo-elemento */
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Use fixed position to cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1; /* Coloca el fondo de estrellas detrás de otros elementos */
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none; /* Asegura que el pseudo-elemento no interfiera con la interacción */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté encima del fondo de estrellas */
+}
+
+.content {
+  flex-grow: 1;
+  background-color: black;
+  padding: 20px;
+  margin-top: 60px; /* Altura del header */
+  margin-bottom: 60px; /* Altura del footer */
+  z-index: -1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #0f0; /* Color verde fluorescente */
+  text-shadow: 0 0 5px #0f0, /* Sombra verde suave */
+               0 0 10px #0f0, /* Sombra verde más intensa */
+               0 0 15px #0f0, /* Sombra verde aún más intensa */
+               0 0 20px #0f0, /* Sombra verde intensa */
+               0 0 25px #0f0; /* Sombra verde muy intensa */
+  text-align: center;
+  padding: 1rem;
+  z-index: 1000; /* para asegurarte de que esté encima del contenido */
+  background-color: #333; /* Añadir un color de fondo para el header */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b1335;
+  color: #0f0; /* Color verde fluorescente */
+  text-shadow: 0 0 5px #0f0, /* Sombra verde suave */
+               0 0 10px #0f0, /* Sombra verde más intensa */
+               0 0 15px #0f0, /* Sombra verde aún más intensa */
+               0 0 20px #0f0, /* Sombra verde intensa */
+               0 0 25px #0f0; /* Sombra verde muy intensa */
+  text-align: center;
+  padding: 1rem;
+  z-index: 1000; /* para asegurarte de que esté encima del contenido */
+}
+
+main.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 60px; /* Ajusta esto según la altura de tu header */
+  margin-bottom: 60px; /* Ajusta esto según la altura de tu footer */
+  padding: 20px;
+  background-color: black; /* Fondo negro para el contenido principal */
+  z-index: 10;
+}
+
+.section {
+  padding: 80px 20px 80px 20px; /* Ajusta según la altura del header y footer */
+  min-height: calc(100vh - 120px); /* Altura de la ventana menos la altura del header y footer */
+  background-color: black; /* Fondo negro para cada sección */
+  width: 100%; /* Asegura que cada sección ocupe el ancho completo */
+  z-index: -1;
+}
