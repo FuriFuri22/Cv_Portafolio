@@ -1,5 +1,6 @@
 import React from 'react';
 import ListElements from './ListElements';
+import './Css/About.css'; // Importar el archivo de estilos
 
 const About = () => {
   const knowledgeSections = [
@@ -20,25 +21,24 @@ const About = () => {
       items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub']
     }
   ];
+
   return (
-    <div className='section'>
-      <h1 style={{fontSize: '50px'}}>
-        Sobre mi
-      </h1>
-      <p style={{fontSize: '20px'}}>
-        Soy un desarrollador de software apasionado por el frontend y el desarrollo nativo
+    <div className='section about-section'>
+      <h1 className='about-title'>Sobre mi</h1>
+      <p className='about-text'>
+        Soy un desarrollador de software apasionado por el frontend y el desarrollo nativo.
       </p>
-      <p style={{fontSize: '20px'}}>
-        Me especializo en el satck MERN, pero tengo conocimientos de otras tecnologias
-      </p >
-      <p style={{fontSize: '20px',
-        display: "flex"
-      }}>
-        Conocimientos:
-        {knowledgeSections.map((section, index) => (
-          <ListElements key={index} title={section.title} items={section.items} />
-        ))}
+      <p className='about-text'>
+        Me especializo en el stack MERN, pero tengo conocimientos de otras tecnologías.
       </p>
+      <div className='knowledge-section'>
+        <h2 className='knowledge-title'>Conocimientos:</h2>
+        <div className='knowledge-lists'>
+          {knowledgeSections.map((section, index) => (
+            <ListElements key={index} title={section.title} items={section.items} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

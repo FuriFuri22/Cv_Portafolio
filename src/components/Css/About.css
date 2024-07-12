@@ -1,0 +1,61 @@
+/* Estilos para la sección About */
+.about-section {
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  .about-text {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .knowledge-section {
+    margin-top: 20px;
+  }
+  
+  .knowledge-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .knowledge-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .knowledge-lists ul {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .knowledge-lists p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #94FF10;
+  }
+  
+  .knowledge-lists li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .knowledge-lists {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .knowledge-lists ul {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
