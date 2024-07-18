@@ -10,7 +10,7 @@ const About = () => {
     },
     {
       title: 'Frameworks:',
-      items: ['ReactJs', 'NodeJs', 'React Native', 'ExpressJs']
+      items: ['ReactJs', 'NodeJs', 'React Native', 'ExpressJs', 'NextJs']
     },
     {
       title: 'Bases de Datos',
@@ -18,7 +18,7 @@ const About = () => {
     },
     {
       title: 'Otros:',
-      items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub', 'Jest']
+      items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub', 'Jest', 'AWS']
     }
   ];
 
