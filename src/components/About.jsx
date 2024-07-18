@@ -18,7 +18,7 @@ const About = () => {
     },
     {
       title: 'Otros:',
-      items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub']
+      items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub', 'Jest']
     }
   ];
 

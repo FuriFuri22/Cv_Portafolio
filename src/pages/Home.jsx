@@ -40,6 +40,7 @@ const Home = () => {
           <About />
         </section>
       </div>
+      Esta seccion pronto estará disponible
       {/*<div className="container">
         <section id="projects" className="section">
           <Projects />
