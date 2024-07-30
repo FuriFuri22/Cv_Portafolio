@@ -1,6 +1,6 @@
 import React from 'react';
 import ListElements from './ListElements';
-import './Css/About.css'; // Importar el archivo de estilos
+import './Css/About.css'; 
 
 const About = () => {
   const knowledgeSections = [
@@ -9,7 +9,7 @@ const About = () => {
       items: ['JavaScript', 'Python', 'PHP', 'TypeScript', 'HTML', 'CSS']
     },
     {
-      title: 'Frameworks:',
+      title: 'Frameworks y librerias:',
       items: ['ReactJs', 'NodeJs', 'React Native', 'ExpressJs', 'NextJs']
     },
     {
@@ -18,7 +18,7 @@ const About = () => {
     },
     {
       title: 'Otros:',
-      items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub', 'Jest', 'AWS']
+      items: ['Docker', 'Vercel', 'XAMPP', 'Postman', 'Jira', 'GitHub']
     }
   ];
 
@@ -26,7 +26,7 @@ const About = () => {
     <div className='section about-section'>
       <h1 className='about-title'>Sobre mi</h1>
       <p className='about-text'>
-        Soy un desarrollador de software apasionado por el frontend y el desarrollo nativo.
+        Soy un desarrollador de software con interes en la ciberseguridad y el desarrollo nativo.
       </p>
       <p className='about-text'>
         Me especializo en el stack MERN, pero tengo conocimientos de otras tecnologías.

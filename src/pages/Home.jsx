@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import About from '../components/About';
-import Projects from '../components/Projects';
+//import Projects from '../components/Projects';
+//import Robot from '../components/Robot';
 import './Home.css';
 
 const Home = () => {
@@ -11,11 +12,11 @@ const Home = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // Dejar de observar una vez que la animación ha sido activada
+          observer.unobserve(entry.target); 
         }
       });
     }, {
-      threshold: 0.5 // El umbral puede ajustarse según la preferencia
+      threshold: 0.5 
     });
 
     sections.forEach(section => {
@@ -33,6 +34,7 @@ const Home = () => {
     <div>
       <section id="home" className="section visible"> {/* Asegurar que la sección home sea visible */}
         <h1 style={{fontSize: '50px'}}>Bienvenido a mi portafolio</h1>
+        {/*<Robot/>*/}
         <p></p>
       </section>
       <div className="container">

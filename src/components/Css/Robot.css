@@ -1,0 +1,8 @@
+.robot-container {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    width: 300px;
+    cursor: pointer;
+  }
+  
